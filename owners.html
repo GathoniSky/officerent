@@ -1,9 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Owners Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Portal · DreamSpace</title>
+    <link rel="stylesheet" href="css/owner.css">
 </head>
 <body>
-    <h1>OWNERS PAGE TESTER</h1>
+    <div class="top-nav">
+        <div class="dreamspace-logo">Dream<span>Space</span></div>
+        <div class="nav-links">
+            <a href="index.html" style="color:#000">Home</a>
+            <a href="about.html" style="color:#000">About</a>
+        </div>
+    </div>
+
+    <div class="owner-portal-container" style="flex-direction: column;">
+        <div class="hero-title" style="margin-bottom: 40px;">
+            Owner <span>Dashboard</span>
+        </div>
+
+        <div class="cards-container">
+            <a href="owner_register.html" class="action-card">
+                <h3>New <span>Owner</span></h3>
+                <p>Register your property today and start reaching thousands of tenants.</p>
+                <div class="card-btn">Register</div>
+            </a>
+
+            <a href="owner_login.html" class="action-card">
+                <h3>Already <span>Member</span></h3>
+                <p>Log in to manage your listings, view inquiries, and update your profile.</p>
+                <div class="card-btn">Login</div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,183 @@
+/* --- DreamSpace Owner-Specific Styles --- */
+
+:root {
+    /* Gradient transition from the main's light purple-blue hint to white */
+    --gradient-top: #efebff; 
+    --gradient-bottom: #ffffff;
+    
+    /* Colors pulled directly from your Main CSS */
+    --ds-purple: #6c47ff;
+    --ds-dark: #1e1b2b;
+    --ds-light-purple: #b1a5f0;
+    --text-main: #000000;
+    --text-muted: #4a4a4a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    /* Gradient background as requested */
+    background: linear-gradient(180deg, var(--gradient-top) 0%, var(--gradient-bottom) 100%);
+    background-attachment: fixed;
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Nav Bar - Using Main Site Logic */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2.5rem;
+}
+
+.dreamspace-logo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.dreamspace-logo span {
+    color: var(--ds-purple); /* Using your specific brand purple */
+}
+
+/* The Extended Rectangle Box */
+.owner-portal-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.extended-box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 900px;
+    padding: 70px 50px;
+    border-radius: 30px;
+    /* Soft shadow based on your signup-large button shadow */
+    box-shadow: 0 20px 50px rgba(108, 71, 255, 0.1);
+    border: 1px solid rgba(108, 71, 255, 0.1);
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+}
+
+.hero-title span {
+    color: var(--ds-purple);
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+}
+
+/* Action Buttons - Matching .signup-large from Main */
+.register-btn {
+    background: var(--ds-dark);
+    color: white;
+    padding: 1.2rem 4rem;
+    border-radius: 60px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    box-shadow: 0 15px 30px -10px rgba(30, 27, 43, 0.3);
+}
+
+.register-btn:hover {
+    background: var(--ds-purple);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 35px -12px rgba(108, 71, 255, 0.5);
+}
+
+.login-footer {
+    margin-top: 25px;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.login-footer a {
+    color: var(--ds-purple);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+.cards-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* The individual small hover box */
+        .action-card {
+            background: #ffffff;
+            width: 280px;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #1e1b2b;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(108, 71, 255, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Hover Effect: Lifts the box and adds a purple glow */
+        .action-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(108, 71, 255, 0.15);
+            border-color: #6c47ff;
+        }
+
+        .action-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .action-card h3 span {
+            color: #6c47ff;
+        }
+
+        .action-card p {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        /* Small button inside the box */
+        .card-btn {
+            background: #1e1b2b;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .action-card:hover .card-btn {
+            background: #6c47ff;
+        }
