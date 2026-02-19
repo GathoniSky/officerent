@@ -30,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute the statement
     if ($stmt->execute()) {
-        echo "New tenant registered successfully!";
         header("Location: ../tenantlogin.html");
         exit();
     } else {

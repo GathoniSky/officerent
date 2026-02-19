@@ -24,7 +24,7 @@ require_once 'db.php';
         </div>
         <div class="nav-links">
             <a href="../index.html">Home</a>
-            <a href="../owners.html">Looking for Owners?</a>
+            <a href="../index.html">Log out</a>
         </div>
     </div>
             <div class="user-info">
