@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(145deg, #f5f0ff 0%, #ffffff 80%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #1e1b2b;
+}
+
+/* top navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2.5rem;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(168, 139, 255, 0.15);
+}
+
+/* logo */
+.dreamspace-logo {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.dreamspace-logo span {
+    background: #a88bff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* nav links (home + looking for owners) */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2b283b;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #a88bff;
+}
+
+/* sign-up container – centers the card */
+.signup-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+}
+
+/* white card */
+.signup-card {
+    background: white;
+    max-width: 480px;
+    width: 100%;
+    padding: 2.5rem 2.8rem;
+    border-radius: 2rem;
+    box-shadow: 0 20px 40px -12px rgba(168, 139, 255, 0.3);
+    border: 1px solid #f0ebff;
+}
+
+.signup-card h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: #000000;
+}
+
+.subhead {
+    font-size: 1rem;
+    color: #4a4560;
+    margin-bottom: 2rem;
+    font-weight: 350;
+}
+
+/* form */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e1b2b;
+    letter-spacing: 0.3px;
+}
+
+.form-group input {
+    padding: 0.9rem 1.2rem;
+    border: 1px solid #e0dcec;
+    border-radius: 60px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+    background-color: #fcfaff;
+}
+
+.form-group input:focus {
+    border-color: #a88bff;
+    box-shadow: 0 0 0 4px rgba(168, 139, 255, 0.2);
+}
+
+.form-group input::placeholder {
+    color: #b3aec9;
+    font-weight: 300;
+}
+
+/* hint text (minimum 8 characters) */
+.hint {
+    font-size: 0.8rem;
+    color: #7b788b;
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+}
+
+/* signup button */
+.btn-signup {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 60px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+    margin-top: 0.6rem;
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.25);
+}
+
+.btn-signup:hover {
+    background: #a88bff;
+    transform: scale(1.01);
+    box-shadow: 0 14px 24px -8px #a88bff;
+}
+
+/* login redirect */
+.login-redirect {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #4a4560;
+}
+
+.login-redirect a {
+    color: #a88bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #6b6880;
+    border-top: 1px solid rgba(168, 139, 255, 0.1);
+    margin-top: 1rem;
+}
