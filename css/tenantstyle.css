@@ -189,3 +189,281 @@ body {
     border-top: 1px solid rgba(168, 139, 255, 0.1);
     margin-top: 1rem;
 }
+/* Add these styles to your existing tenantstyle.css */
+
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    flex: 1;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-header p {
+    font-size: 1.2rem;
+    color: #4a4560;
+}
+
+/* Listings Grid */
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Listing Card */
+.listing-card {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(168, 139, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #f0ebff;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -12px rgba(168, 139, 255, 0.4);
+}
+
+/* Listing Image */
+.listing-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: #f5f0ff;
+}
+
+.listing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.listing-card:hover .listing-image img {
+    transform: scale(1.05);
+}
+
+.placeholder-image {
+    background: linear-gradient(135deg, #a88bff20, #6c47ff20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-text {
+    color: #a88bff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Listing Details */
+.listing-details {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.listing-location {
+    color: #4a4560;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.listing-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.feature {
+    background: #f5f0ff;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: #1e1b2b;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.listing-description {
+    color: #5f5b70;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    flex: 1;
+}
+
+/* Listing Footer */
+.listing-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #f0ebff;
+}
+
+.listing-price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.price-period {
+    color: #7b788b;
+    font-size: 0.9rem;
+}
+
+.listing-owner {
+    text-align: right;
+}
+
+.owner-label {
+    font-size: 0.8rem;
+    color: #7b788b;
+    display: block;
+}
+
+.owner-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1e1b2b;
+}
+
+/* Listing Actions */
+.listing-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.btn-view, .btn-inquire {
+    flex: 1;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.btn-view {
+    background: #000000;
+    color: white;
+}
+
+.btn-view:hover {
+    background: #a88bff;
+    transform: scale(1.02);
+}
+
+.btn-inquire {
+    background: #f5f0ff;
+    color: #000000;
+    border: 1px solid #a88bff50;
+}
+
+.btn-inquire:hover {
+    background: #a88bff;
+    color: white;
+}
+
+/* No Listings State */
+.no-listings {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: 2rem;
+    box-shadow: 0 10px 30px -10px rgba(168, 139, 255, 0.1);
+}
+
+.no-listings-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.no-listings-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.no-listings h3 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.no-listings p {
+    color: #7b788b;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 0 1rem;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 2rem;
+    }
+    
+    .listings-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .listing-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .listing-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .listing-owner {
+        text-align: left;
+    }
+}
