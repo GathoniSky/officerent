@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamSpace · Sign Up</title>
+    <link rel="stylesheet" href="css/tenantstyle.css">
+    <link rel="icon" href="css/LOGO.png" type="image/png">
+</head>
+<body>
+    <div class="top-nav">
+        <div class="dreamspace-logo">
+            Dream<span>Space</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="owners.html">Looking for Owners?</a>
+        </div>
+    </div>
+
+    <div class="signup-container">
+        <div class="signup-card">
+            <h1>Log in to your account</h1>
+            <p class="subhead">Welcome back! Please enter your details to log in.</p>
+
+            <form action="php/tenantlogin.php" method="POST" class="signup-form">
+                <div class="form-group">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="First name  Last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-signup">Log in</button>
+            </form>
+            <p class="login-redirect">
+                Don't have an account? <a href="tenantsign.html">Sign up</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 DreamSpace. All rights reserved.</p>
+    </div>
+</body>
+</html>
