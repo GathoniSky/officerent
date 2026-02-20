@@ -1,3 +1,23 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["id"])) {
+    header("Location: ../owner_login.html");
+    exit();
+}
+
+require_once 'db.php';
+
+// Fetch all listings from the database
+//$listings_query = "SELECT * FROM listings WHERE status = 'available' OR status IS NULL ORDER BY created_at DESC";
+//$listings_result = $conn->query($listings_query);
+
+// Check if the query was successful
+//if (!$listings_result) {
+//    die("Error fetching listings: " . $conn->error);
+//}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +33,7 @@
 
     <nav class="top-nav">
         <a href="../index.html" class="dreamspace-logo">Dream<span>Space</span></a>
-        <div style="font-weight: 600;">Welcome, Owner</div>
+        <div style="font-weight: 600;">Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?>!</div>
         <a href="../owners.html" style="text-decoration: none; color: var(--text-muted);">Logout</a>
     </nav>
 
