@@ -318,3 +318,248 @@ body {
         @media (max-width: 900px) {
             .dash-container { grid-template-columns: 1fr; }
         }
+
+/*status badge styles */
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .status-available {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status-rented {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            text-align: left;
+            padding: 12px;
+            background: #f5f0ff;
+            color: #1e1b2b;
+            font-weight: 600;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #f0ebff;
+        }
+        .price-tag {
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 2rem;
+            padding: 2.5rem 3rem;
+            box-shadow: 0 20px 40px -12px rgba(168, 139, 255, 0.3);
+            border: 1px solid #f0ebff;
+        }
+
+        .form-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            color: #000000;
+        }
+
+        .form-title span {
+            background: linear-gradient(130deg, #6c47ff, #a88bff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .form-subtitle {
+            font-size: 1rem;
+            color: #4a4560;
+            margin-bottom: 2rem;
+            font-weight: 350;
+        }
+
+        /* Form Groups */
+        .add-listing-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-group label {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #1e1b2b;
+            letter-spacing: 0.3px;
+        }
+
+        .required {
+            color: #ff385c;
+            margin-left: 2px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.9rem 1.2rem;
+            border: 1px solid #e0dcec;
+            border-radius: 60px;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.2s;
+            background-color: #fcfaff;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            border-radius: 30px;
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234a4560' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #a88bff;
+            box-shadow: 0 0 0 4px rgba(168, 139, 255, 0.2);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #b3aec9;
+            font-weight: 300;
+        }
+
+        /* Currency Input */
+        .currency-input {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .currency-symbol {
+            position: absolute;
+            left: 1.2rem;
+            color: #4a4560;
+            font-weight: 500;
+        }
+
+        .currency-input input {
+            padding-left: 2.5rem;
+            width: 100%;
+        }
+
+        /* Alerts */
+        .alert {
+            padding: 1rem 1.5rem;
+            border-radius: 60px;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Form Actions */
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .btn-submit,
+        .btn-cancel {
+            padding: 1rem 2rem;
+            border-radius: 60px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+            flex: 1;
+        }
+
+        .btn-submit {
+            background: #000000;
+            color: white;
+        }
+
+        .btn-submit:hover {
+            background: #a88bff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -8px #a88bff;
+        }
+
+        .btn-cancel {
+            background: #f5f0ff;
+            color: #1e1b2b;
+            border: 1px solid #e0dcec;
+            display: inline-block;
+        }
+
+        .btn-cancel:hover {
+            background: #e0dcec;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 0 1rem;
+            }
+            
+            .form-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .form-title {
+                font-size: 1.8rem;
+            }
+            
+            .form-actions {
+                flex-direction: column;
+            }
+        }
