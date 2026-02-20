@@ -41,9 +41,9 @@ require_once 'db.php';
         <div class="mgmt-box">
             <h2>Manage <span>Listings</span></h2>
             <div class="btn-stack">
-                <button class="dash-btn btn-add">+ Add New Space</button>
-                <button class="dash-btn btn-update">Update Existing</button>
-                <button class="dash-btn btn-delete">Delete Listing</button>
+                <button onclick="window.location.href='add_listing.php'" class="dash-btn btn-add">+ Add New Space</button>
+                <button onclick="window.location.href='update_listing.php'" class="dash-btn btn-update">Update Existing</button>
+                <button onclick="window.location.href='delete_listing.php'" class="dash-btn btn-delete">Delete Listing</button>
             </div>
             <p style="margin-top: 20px; font-size: 0.8rem; color: var(--text-muted);">
                 Need help? Contact support@dreamspace.com
