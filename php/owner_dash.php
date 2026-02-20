@@ -12,9 +12,9 @@
 <body>
 
     <nav class="top-nav">
-        <a href="index.html" class="dreamspace-logo">Dream<span>Space</span></a>
+        <a href="../index.html" class="dreamspace-logo">Dream<span>Space</span></a>
         <div style="font-weight: 600;">Welcome, Owner</div>
-        <a href="owners.html" style="text-decoration: none; color: var(--text-muted);">Logout</a>
+        <a href="../owners.html" style="text-decoration: none; color: var(--text-muted);">Logout</a>
     </nav>
 
     <div class="dash-container">
