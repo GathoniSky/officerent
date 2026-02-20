@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owner Dashboard · DreamSpace</title>
-    <link rel="stylesheet" href="css/owner.css">
-        <link rel="icon" href="css/LOGO.png" type="image/png">
+    <link rel="stylesheet" href="../css/owner.css">
+        <link rel="icon" href="../css/LOGO.png" type="image/png">
 
 
 </head>
